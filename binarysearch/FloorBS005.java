@@ -1,16 +1,16 @@
 package com.binarysearch;
-//CEILING NUMBER IS THE SMALLEST NUMBER IN ARRAY WHICH IS GREATER THAN OR EQUAL TO TARGET
-public class CeilingBS {
+//FLOOR OF NUMBER IS THE GREATEST NUMBER THAT IS SMALLER THAN OR EQUAL TO TARGET
+public class FloorBS005 {
     public static void main(String[] args) {
         int[] arr={2,3,5,9,14,16,18};
-        int target = 19;
-        int ans=ceiling(arr,target);
+        int target = 4;
+        int ans=floor(arr,target);
         System.out.println(ans);
     }
-    static int ceiling(int[] arr,int target){
+    static int floor(int[] arr,int target){
         int start = 0;
         int end = arr.length-1;
-        if (target>arr[end])
+        if(target<arr[start])
             return -1;
         while (start<=end){
             int mid=start+(end-start)/2;
@@ -21,7 +21,6 @@ public class CeilingBS {
             else
                 return mid;
         }
-        return start;
+        return end;
     }
 }
-

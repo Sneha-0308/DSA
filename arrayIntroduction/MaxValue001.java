@@ -1,12 +1,11 @@
 package com.arrayIntroduction;
 
-public class MaxValue {
+public class MaxValue001 {
     public static void main(String[] args) {
         int[] arr = {12, 55, 47, 1, 6};
         System.out.println(max(arr));
         System.out.println(max_in_range(arr, 2, 4));
     }
-
     //Add edge cases
     static int max(int[] arr) {
         if (arr == null)

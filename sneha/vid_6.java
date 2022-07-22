@@ -99,7 +99,7 @@ public class vid_6 {
 //        }
 //        System.out.println(count);
 
-        /*Q5.Reverse number*/
+        /*Q5.Reverse002 number*/
 //        int n=15456;
 //        int ans=0;
 //        while(n>0)
