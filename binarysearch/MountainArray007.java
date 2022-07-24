@@ -1,6 +1,6 @@
 package com.binarysearch;
 
-public class MountainArray {
+public class MountainArray007 {
     // https://leetcode.com/problems/peak-index-in-a-mountain-array/
     // https://leetcode.com/problems/find-peak-element/
     public static void main(String[] args) {
