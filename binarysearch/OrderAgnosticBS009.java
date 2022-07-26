@@ -1,14 +1,16 @@
 package com.binarysearch;
 
-public class OrderAgnosticBS {
+public class OrderAgnosticBS009 {
 //
 //    The intuition behind this algorithm is what if the order of the sorted array is not given. So here check that the value of
 //    the first element is greater or smaller than the last element.
     public static void main(String[] args) {
-
+        int a[]={40, 10, 5, 2, 1 };
+        int target=10;
+        System.out.println(search(a,target));;
     }
     // https://leetcode.com/problems/find-in-mountain-array/
-    int search(int[] arr, int target) {
+    static int search(int[] arr, int target) {
         int peak = peakIndexInMountainArray(arr);
         int firstTry = orderAgnosticBS(arr, target, 0, peak);
         if (firstTry != -1) {
@@ -18,7 +20,7 @@ public class OrderAgnosticBS {
         return orderAgnosticBS(arr, target, peak+1, arr.length - 1);
     }
 
-    public int peakIndexInMountainArray(int[] arr) {
+    static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 
