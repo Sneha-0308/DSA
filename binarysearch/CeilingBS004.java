@@ -1,5 +1,6 @@
 package com.binarysearch;
 //CEILING NUMBER IS THE SMALLEST NUMBER IN ARRAY WHICH IS GREATER THAN OR EQUAL TO TARGET
+//TODO: For Ascending order
 public class CeilingBS004 {
     public static void main(String[] args) {
         int[] arr={2,3,5,9,14,16,18};

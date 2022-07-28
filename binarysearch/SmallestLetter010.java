@@ -1,6 +1,7 @@
 package com.binarysearch;
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/
-public class SmallestLetter {
+//it is kind of finding ceiling of a number  that is smallest number greater than target
+public class SmallestLetter010 {
     public static void main(String[] args) {
         char[] letters={'c','f','j'};
         char target = 'c';
