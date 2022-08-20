@@ -4,7 +4,7 @@ package com.binarysearch;
 public class CeilingBS004 {
     public static void main(String[] args) {
         int[] arr={2,3,5,9,14,16,18};
-        int target = 17;
+        int target = 5;
         int ans=ceiling(arr,target);
         System.out.println(ans);
     }
@@ -20,9 +20,9 @@ public class CeilingBS004 {
             else if(target<arr[mid])
                 end = mid-1;
             else
-                return mid;
+                return arr[mid];
         }
-        return start;
+        return arr[start];
     }
 }
 
