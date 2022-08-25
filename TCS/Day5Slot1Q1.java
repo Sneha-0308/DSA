@@ -1,5 +1,5 @@
 package com.TCS;
-
+//TODO: isFail observe function carefully
 import java.util.Scanner;
 
 public class Day5Slot1Q1 {
