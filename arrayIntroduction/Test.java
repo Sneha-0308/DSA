@@ -1,18 +1,12 @@
-//package com.arrayIntroduction;
-//
-//
-//import java.util.HashMap;
-//import java.util.Map;
-//
-//public class Test{
-//    public static void main(String[] args) {
-//        Map map = new HashMap();
-//        s=s.trim();
-//        String[] tokens = s.split(" ");
-//        if(tokens.length !=pattern.length()) return false;
-//        for(Integer i=0;i<tokens.length;i++){
-//            if(map.put(tokens[i],i) != map.put(pattern.charAt(i),i)) return false;
-//        }
-//        return true;
-//    }
-//}
+package com.arrayIntroduction;
+
+
+import java.util.*;
+
+public class Test{
+    public static void main(String[] args) {
+     int[] arr={-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,354};
+     Arrays.sort(arr);
+     System.out.println(Arrays.toString(arr));
+    }
+}
