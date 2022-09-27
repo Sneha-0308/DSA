@@ -1,12 +1,21 @@
 package com.arrayIntroduction;
 
-
+//n=4
 import java.util.*;
 
 public class Test{
+    static int value(int num){
+        String s=Integer.toString(num);
+        for(int i=1;i<num;i++){
+            if(num%i==1 && s.contains(Integer.toString(num-i)) ) {
+                s+=Integer.toString(num-i);
+            }
+        }
+        return s.length();
+    }
+
     public static void main(String[] args) {
-     int[] arr={-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,354};
-     Arrays.sort(arr);
-     System.out.println(Arrays.toString(arr));
+        int num=4;
+        value(num);
     }
 }
