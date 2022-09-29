@@ -14,6 +14,6 @@ public class ThreeSumClosest {
                     result=dif;
             }
         }
-
+return 0;
     }
 }
