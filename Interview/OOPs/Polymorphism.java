@@ -1,4 +1,4 @@
-package com.Interview;
+package com.Interview.OOPs;
 
 /**METHOD OVERLOADING**/
 class Student{

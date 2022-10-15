@@ -1,4 +1,4 @@
-package com.Interview;
+package com.Interview.OOPs;
 
 /***Pen class is blueprint class that is it does not exist physically only logic is present **/
 class Pen{
