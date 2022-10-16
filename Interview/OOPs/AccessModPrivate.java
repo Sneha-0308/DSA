@@ -1,4 +1,4 @@
-package com.Interview;
+package com.Interview.OOPs;
 
 class Modifier{
     private String password;
