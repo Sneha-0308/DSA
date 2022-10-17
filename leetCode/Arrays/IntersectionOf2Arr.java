@@ -17,6 +17,7 @@ public class IntersectionOf2Arr {
         for(int i=0;i<nums1.length;i++){
             map1.put(nums1[i],i);
         }
+        System.out.println(map1);
         for(int i=0;i<nums2.length;i++){
             map2.put(nums2[i],i);
         }
