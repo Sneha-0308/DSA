@@ -2,23 +2,22 @@ package com.leetCode.SSTRING;
 
 public class MinAmountofTimeTocollectGarbage {
     static int func(String[] garbage,int[] travel){
-        System.out.println(ownfun(garbage,travel,'P'));
-        System.out.println(ownfun(garbage,travel,'G'));
-        System.out.println(ownfun(garbage,travel,'M'));
-        return ownfun(garbage,travel,'P')+ownfun(garbage,travel,'G')+ownfun(garbage,travel,'M');
+        int a=ownfun(garbage,travel,"G");
+        int b=ownfun(garbage,travel,"M");
+        int c=ownfun(garbage,travel,"P");
+        int d=0;
+        for(int i=0;i<garbage.length;i++)
+            d+=garbage[i].length();
+        return a+b+c+d;
     }
-    static int ownfun(String[] garbage,int[] travel,char g){
+    static int ownfun(String[] garbage,int[] travel,String g){
         int sum=0;
-        for(int i=1;i<garbage.length;i++){
-            if(garbage[i].length()==1){
-                if(garbage[i]==g+"")
-                    sum+=travel[i-1];
-            }
-            else {
-                for(int j=0;j<garbage[i].length();j++){
-                    if(garbage[i].charAt(j)==g)
-                        sum+=travel[i-1];
+        for(int i=garbage.length-1;i>=0;i--){
+            if(garbage[i].contains(g)){
+                for(int j=i-1;j>=0;j--){
+                    sum+=travel[j];
                 }
+                break;
             }
         }
         return sum;
