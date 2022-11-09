@@ -8,8 +8,8 @@ public class FindInMountain008 {
     static int peak(int[] a){
         int start = 0;
         int end=a.length-1;
-        int mid=start+(end-start)/2;
         while (start<end){
+            int mid=start+(end-start)/2;
             if(a[mid]<a[mid+1])
                 start=mid+1;
             else
