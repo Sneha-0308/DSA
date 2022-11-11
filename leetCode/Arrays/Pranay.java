@@ -29,6 +29,6 @@ public class Pranay {
         int n=5;
         System.out.println(numSequence(arr,n));
         int num=47;
-        int a=Arrays.;
+//        int a=Arrays.;
     }
 }
